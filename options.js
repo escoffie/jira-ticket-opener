@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!baseUrl) return;
 
     chrome.storage.sync.set({ jiraBaseUrl: baseUrl }, () => {
-      document.getElementById('status').textContent = 'Guardado!';
+      document.getElementById('status').textContent = 'Saved!';
       setTimeout(() => document.getElementById('status').textContent = '', 2000);
     });
   });
